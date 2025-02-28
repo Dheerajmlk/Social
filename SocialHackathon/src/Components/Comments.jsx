@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import "../styles/Comments.css";
 
 const Comments = () => {
   return (
-    <div>Comments</div>
-  )
-}
+    <div className="comments-container">
+      <h2 className="comments-title">Comments</h2>
+    </div>
+  );
+};
 
-export default Comments
+export default Comments;
