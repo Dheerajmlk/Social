@@ -1,24 +1,23 @@
-import React from "react"
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom"
-import { Provider } from "react-redux"
-import store from "./Redux/store"
-import Home from "./Pages/Home"
-import About from "./Pages/About"
-import Contact from "./Pages/Contact"
-import NewPost from "./Pages/NewPost"
-
-
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./Redux/store";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import NewPost from "./Pages/NewPost";
+import "./styles/Navbar.css";
 
 function App() {
   return (
     <Provider store={store}>
       <Router>
-        <div className="p-4">
-          <nav className="flex gap-4 mb-4 border-b pb-2">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/new-post">New Post</Link>
+        <div className="app-container">
+          <nav className="navbar">
+            <Link to="/" className="navbar-link">Home</Link>
+            <Link to="/about" className="navbar-link">About</Link>
+            <Link to="/contact" className="navbar-link">Contact</Link>
+            <Link to="/new-post" className="navbar-link">New Post</Link>
           </nav>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -29,6 +28,7 @@ function App() {
         </div>
       </Router>
     </Provider>
-  )
+  );
 }
+
 export default App;
