@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import Post from "../Components/Post";
+import "../styles/Home.css"
 
 const Home = () => {
   const posts = useSelector((state) => state.posts);

@@ -1,0 +1,33 @@
+.newpost-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .newpost-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .newpost-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .newpost-button {
+    padding: 10px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  .newpost-button:hover {
+    background-color: #e6b800;
+  }
+  

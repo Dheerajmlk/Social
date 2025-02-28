@@ -7,6 +7,8 @@ import About from "./Pages/About"
 import Contact from "./Pages/Contact"
 import NewPost from "./Pages/NewPost"
 
+
+
 function App() {
   return (
     <Provider store={store}>
