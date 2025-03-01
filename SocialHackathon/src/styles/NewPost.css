@@ -1,33 +1,80 @@
+/* Centering and Layout */
 .newpost-container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
   }
   
+  /* Title */
+  .newpost-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Form Styling */
   .newpost-form {
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
   
-  .newpost-input {
+  /* Input Fields */
+  .newpost-input,
+  .newpost-textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
     font-size: 1rem;
+    transition: all 0.3s ease-in-out;
   }
   
+  .newpost-input:focus,
+  .newpost-textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+  }
+  
+  /* Textarea Resizing */
+  .newpost-textarea {
+    min-height: 120px;
+    resize: none;
+  }
+  
+  /* Submit Button */
   .newpost-button {
-    padding: 10px;
-    background-color: #ffcc00;
+    padding: 12px;
+    background: linear-gradient(45deg, #ffcc00, #ff9900);
+    color: white;
+    font-weight: bold;
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
   }
   
   .newpost-button:hover {
-    background-color: #e6b800;
+    background: linear-gradient(45deg, #ff9900, #ff6600);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 600px) {
+    .newpost-container {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .newpost-input,
+    .newpost-textarea {
+      font-size: 0.9rem;
+    }
   }
   
