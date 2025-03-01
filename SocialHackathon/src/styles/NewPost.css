@@ -1,80 +1,117 @@
-/* Centering and Layout */
+
 .newpost-container {
-    max-width: 500px;
-    margin: 50px auto;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  width: calc(100% - 40px);
+  max-width: 90%;
+}
+
+.newpost-container:hover {
+  transform: scale(1.02);
+}
+
+
+.newpost-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+
+.newpost-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+
+.newpost-input,
+.newpost-textarea,
+.newpost-file,
+.newpost-skills {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+
+.newpost-file {
+  cursor: pointer;
+}
+
+
+.newpost-skills {
+  height: 100px;
+  font-size: 1rem;
+}
+
+.newpost-input:focus,
+.newpost-textarea:focus,
+.newpost-skills:focus {
+  border: 2px solid #ffcc00;
+  outline: none;
+  box-shadow: 0 0 12px rgba(255, 204, 0, 0.5);
+}
+
+
+.newpost-image-preview {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 10px auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.newpost-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.newpost-button:hover {
+  background: linear-gradient(90deg, #ff9900, #ff6600);
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(255, 204, 0, 0.3);
+}
+
+
+@media screen and (max-width: 600px) {
+  .newpost-container {
+    width: 90%;
     padding: 30px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
   }
-  
-  /* Title */
-  .newpost-title {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  /* Form Styling */
-  .newpost-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  /* Input Fields */
+
   .newpost-input,
-  .newpost-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 1rem;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .newpost-input:focus,
-  .newpost-textarea:focus {
-    border-color: #ffcc00;
-    outline: none;
-    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
-  }
-  
-  /* Textarea Resizing */
-  .newpost-textarea {
-    min-height: 120px;
-    resize: none;
-  }
-  
-  /* Submit Button */
+  .newpost-textarea,
+  .newpost-skills,
+  .newpost-file,
   .newpost-button {
-    padding: 12px;
-    background: linear-gradient(45deg, #ffcc00, #ff9900);
-    color: white;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
+    width: 100%;
   }
-  
-  .newpost-button:hover {
-    background: linear-gradient(45deg, #ff9900, #ff6600);
-    transform: scale(1.05);
-  }
-  
-  /* Responsive Design */
-  @media screen and (max-width: 600px) {
-    .newpost-container {
-      width: 90%;
-      padding: 20px;
-    }
-  
-    .newpost-input,
-    .newpost-textarea {
-      font-size: 0.9rem;
-    }
-  }
-  
+}

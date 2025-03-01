@@ -1,7 +1,7 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 15px 20px;
     background: linear-gradient(90deg, #ff6b6b, #ffcc00);
@@ -48,14 +48,14 @@
     transform: scale(1.1);
   }
   
-  /* Mobile Menu Button */
+
   .navbar-menu {
     display: none;
     font-size: 2rem;
     cursor: pointer;
   }
   
-  /* Mobile Responsive Navbar */
+
   @media screen and (max-width: 768px) {
     .navbar-links {
       display: none;
