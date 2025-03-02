@@ -39,4 +39,4 @@ npm run dev
 
 Click here to view the deployed project
 
-https://github.com/Dheerajmlk/Social/tree/main/SocialHackathon
+- https://github.com/Dheerajmlk/Social/tree/main/SocialHackathon
